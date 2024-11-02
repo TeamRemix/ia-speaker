@@ -12,26 +12,27 @@
     />
   </head>
   <body>
-    <div class="container-fluid bg-dark text-white">
+    <div class="container-fluid p-0 bg-dark text-white">
       <div class="row m-0 vh-100">
         <div
           class="col-sm-12 p-0 overflow-hidden d-flex align-items-center justify-content-center"
         >
-          <div class="card bg-dark text-white w-100 h-100">
+          <div class="card  bg-dark text-white w-100 h-100">
             <div
               class="card-body d-flex flex-column justify-content-center align-items-center"
             >
-              <h5 class="card-title text-center">IA-Speaker</h5>
+              <h1 class="card-title text-center">IA-Speaker</h1>
 
-              <div class="w-100 mt-auto p-2 text-center" id="3dSpace">
-                <!-- Model 3D Space -->
-              </div>
 
-              <div class="input-group mt-auto mb-3 w-75">
+              <!-- Model 3d space -->
+              <div class="p-0 m-0" id="3dSpace"></div>
+
+              <!-- interacting space -->
+              <div class="input-group mt-3 mb-3 w-75">
                 <textarea
                   class="form-control"
                   id="showText"
-                  placeholder="Escribir"
+                  placeholder=""
                 ></textarea>
                 <button
                   class="btn btn-primary"

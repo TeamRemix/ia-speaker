@@ -11,8 +11,9 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 
+// Escena del modelo
 const renderer = new THREE.WebGLRenderer();
-renderer.setSize(window.innerWidth * 0.8, window.innerHeight * 0.8);
+renderer.setSize(window.innerWidth * 0.7, window.innerHeight * 0.7);
 renderer.shadowMap.enabled = true;
 model3D.appendChild(renderer.domElement);
 
@@ -35,8 +36,8 @@ loader.load(
   "testTalking.glb",
   (gltf) => {
     character = gltf.scene;
-    character.scale.set(2, 2, 2);
-    character.position.set(0, 0, 0);
+    character.scale.set(4, 4.3, 2);
+    character.position.set(0, -3.5, 0);
     scene.add(character);
 
     mixer = new THREE.AnimationMixer(character);
