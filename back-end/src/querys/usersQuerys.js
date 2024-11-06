@@ -1,11 +1,8 @@
 //const { pool } = require('../database')
 const mariadb = require('mariadb')
-const pool = mariadb.createPool({
-  host: 'localhost',
-  user: 'admin_rafa',
-  password: '2003',
-  database: 'speakeria'
-})
+const dbKeys = require('../keys')
+
+const pool = mariadb.createPool(dbKeys)
 
 const findUser = async (userName) => {
   try {
